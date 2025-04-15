@@ -1,0 +1,27 @@
+package repeat.addition.until.correct;
+
+import java.util.Scanner;
+
+public class RepeatAdditionUntilCorrect {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        boolean x = true;
+        int number1 = (int) (Math.random() * 10);
+        int number2 = (int) (Math.random() * 10);
+        System.out.println("The add question is  " + number1 + "+" + number2);
+        System.out.println("please enter answer");
+        while (x) {
+
+            int add = number1 + number2;
+
+            int y = input.nextInt();
+            if (add == y) {
+                System.out.println("your answer is correct");
+                x = false;
+            } else {
+                System.out.println("your answer is wrong please try again");
+            }
+        }
+    }
+}

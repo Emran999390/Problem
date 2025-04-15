@@ -1,0 +1,25 @@
+
+package predicting.the.future.tuition;
+
+import java.util.Scanner;
+
+public class PredictingTheFutureTuition {
+
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("please enter the annual tuition");
+        int tuition = input.nextInt();
+        System.out.println("please enter the annual tuition increase in percentage");
+        int annualTuition = input.nextInt();
+        int result = (tuition * annualTuition) / 100;
+           int x = 0;
+           int y = 0;
+        while(x <= tuition ){
+       x += result; 
+        y++;
+    }
+        System.out.println( "your tuition will be paid after year " +(y-1));
+     
+}
+}
